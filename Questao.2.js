@@ -39,7 +39,7 @@
     <button type="button" onclick="resto()">%</button>
     <br></br>
     <div>
-        <button type="button" onclick="Limpar()"></button>        
+        <button type="button" onclick="limpar()"></button>        
     </div>
    
 
