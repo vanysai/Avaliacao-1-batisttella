@@ -7,7 +7,6 @@
 
     <link rel="icon" type="image/x-icon" href="https://i0.wp.com/sociedadejedi.com.br/wp-content/uploads/2016/03/simbolo-1.jpg">
 <style>
- 
     body {
          margin: 0;
     }
@@ -25,7 +24,7 @@
 </style>
 </head>
 <body bgcolor="#c2a0f2">
-    <h2 align="center">Calculadora</h2>
+    <h1 align="center">Calculadora</h1>
     <input type="number" id="x" placeholder="Digite o valor de X">
     <br><br>
     <input type="number" id="y" placeholder="Digite o valor de Y">
@@ -38,6 +37,12 @@
     <button type="button" onclick="potencia()">**</button>
     <button type="button" onclick="raize()">math(sqrt)</button>
     <button type="button" onclick="resto()">%</button>
+    <br></br>
+    <div>
+        <button type="button" onclick="Limpar()"></button>        
+    </div>
+   
+
 
     <script>
         const somar = function() {
@@ -83,8 +88,11 @@
             let z =document.getElementById('z');
             z.value = x % y;
         }
-
-        document.getElementById('campo').value='';
+        const limpar= function() {
+            document.getElementById('x').value = "limpar"
+            document.getElementById('y').value = "limpar"
+            document.getElementById('z').value = "limpar"
+        }    
     </script>
 
 </body>
